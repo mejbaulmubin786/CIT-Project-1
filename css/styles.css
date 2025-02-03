@@ -1,3 +1,92 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
 }
+:root {
+  --primary-color: #6a55ea;
+  --secondary-color: #f3f7fd;
+  --text-color: #1d354f;
+  --button-color: #8454f5;
+  --open-sans-font: "Open Sans", sans-serif;
+  --nunito-font: "Nunito", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+}
+
+/*======================================
+          Common CSS ‍Start
+=======================================*/
+.w-1410 {
+  width: 1410px;
+}
+.d-flex {
+  display: flex;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+
+.flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #1d354f;
+}
+
+.common-button a {
+  background: #8454f5;
+  color: #fff;
+  font-family: "Nunito", serif;
+  font-size: 18px;
+  padding: 18px 28px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+/*======================================
+          Common CSS End
+=======================================*/
+
+/*======================================
+          nav-bar CSS ‍Start
+=======================================*/
+nav {
+  width: 1408px;
+}
+nav .navbar-content {
+  display: flex;
+  width: 100%;
+  margin: 30px 0;
+  column-gap: 48px;
+  justify-content: center;
+}
+
+.navbar-content .navbar-brand {
+  width: 22%;
+}
+
+.navbar-content .primary-nav {
+  width: 58%;
+}
+.navbar-content .primary-nav li a {
+  font-size: 18px;
+  color: #29313d;
+  font-weight: 600;
+  font-family: "Open Sans", serif;
+  transition: 0.4s;
+}
+.navbar-button {
+  width: 26%;
+  text-align: center;
+}
+/*======================================
+          nav-bar CSS End
+=======================================*/
