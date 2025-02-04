@@ -3,7 +3,7 @@
   padding: 0;
 }
 :root {
-  --primary-color: #dee9ec;
+  --primary-color: #f8fdff;
   --secondary-color: #f3f7fd;
   --text-color: #29313d;
   --button-color: #8454f5;
@@ -132,6 +132,7 @@ nav .navbar-content {
 }
 
 .sub-menu li:hover > .sub-menu {
+  top: -5%;
   left: 100%;
   opacity: 1;
   visibility: visible;
