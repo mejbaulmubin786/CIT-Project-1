@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-1</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Nunito:wght@200..1000&family=Poppins:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/all.min.css" />
@@ -21,23 +13,106 @@
   </head>
   <body>
     <header>
-      <nav class="mx-auto flex-center-between">
-        <div class="navbar-content">
-          <div class="navbar-brand">
-            <a href="#">
-              <img src="./images/logo.png" alt="Your Logo" />
-            </a>
-          </div>
-          <ul class="flex-center-between primary-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Price</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-          <div class="navbar-button common-button">
-            <a href="">Contact Us</a>
+      <nav>
+        <div class="container mx-auto">
+          <div class="navbar-content flex-between">
+            <div class="navbar-brand">
+              <a href="#">
+                <img src="./images/logo.png" alt="Your Logo" />
+              </a>
+            </div>
+            <div class="navbar-menu">
+              <ul class="flex-between">
+                <li>
+                  <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="">Welcome</a></li>
+                    <li><a href="">Our Mission</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">FAQ</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">About <i class="fa-solid fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="">Company Overview</a></li>
+                    <li><a href="">Our History</a></li>
+                    <li>
+                      <a href=""
+                        >Our Team <i class="fa-solid fa-angle-right"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li><a href="">CEO & Leadership</a></li>
+                        <li><a href="">Developers</a></li>
+                        <li><a href="">Designers</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Contact Us</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Services <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href=""
+                        >Web Development <i class="fa-solid fa-angle-right"></i
+                      ></a>
+
+                      <ul class="sub-menu">
+                        <li><a href="">Frontend Development</a></li>
+                        <li><a href="">Backend Development</a></li>
+                        <li><a href="">Full Stack Development</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href=""
+                        >App Development <i class="fa-solid fa-angle-right"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li><a href="">Android App Development</a></li>
+                        <li><a href="">iOS App Development</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href=""
+                        >Graphic Design <i class="fa-solid fa-angle-right"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li><a href="">Logo Design</a></li>
+                        <li><a href="">UI/UX Design</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href=""
+                        >SEO & Marketing <i class="fa-solid fa-angle-right"></i
+                      ></a>
+                      <ul class="sub-menu">
+                        <li><a href="">Search Engine Optimization</a></li>
+                        <li><a href="">Social Media Marketing</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#"
+                    >Portfolio <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#">Price <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-button">
+              <a href="#" class="btn">Contact Us</a>
+            </div>
           </div>
         </div>
       </nav>
