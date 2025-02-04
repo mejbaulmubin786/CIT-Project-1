@@ -11,7 +11,9 @@
   --nunito-font: "Nunito", sans-serif;
   --poppins-font: "Poppins", sans-serif;
 }
-
+body {
+  font-size: initial;
+}
 /*======================================
           Common CSS ‍Start
 =======================================*/
@@ -63,6 +65,15 @@ a {
   background: transparent;
   color: var(--button-color);
   border-color: var(--button-color);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400px;
+  font-family: "Nunito", serif;
+  color: #29313d;
+  padding-bottom: 24px;
+  line-height: 200%;
 }
 /*======================================
           Common CSS End
@@ -116,12 +127,15 @@ nav .navbar-content {
   padding: 8px 20px;
   position: relative;
 }
+
 .navbar-menu li:hover > .sub-menu {
   top: 100%;
   opacity: 1;
   visibility: visible;
 }
-
+.navbar-menu li:hover > .sub-menu a {
+  color: var(--text-color);
+}
 .sub-menu .sub-menu {
   position: absolute;
   top: 0;
@@ -137,6 +151,74 @@ nav .navbar-content {
   opacity: 1;
   visibility: visible;
 }
+
 /*======================================
           nav-bar CSS End
 =======================================*/
+/*======================================
+             HERO-SECTION--END
+=======================================*/
+.feature-section .container {
+  max-width: 1840px;
+  width: 90%;
+}
+
+.feature-section {
+  background-color: var(--primary-color);
+}
+.feature-left {
+  width: 28%;
+}
+.feature-left img {
+  width: 100%;
+}
+.feature-text {
+  width: 37%;
+}
+.feature-right {
+  width: 35%;
+}
+
+.feature-right img {
+  width: 77%;
+}
+.feature-text h1 {
+  width: 464px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1d354f;
+  font-family: "Open Sans", serif;
+}
+.feature-content .feature-content {
+  width: 78%;
+}
+/*======================================
+             HERO-SECTION-START
+=======================================*/
+
+/*
+    <!----======================================
+             HERO-SECTION--END
+=======================================-->
+
+    <!----======================================
+             -SECTION-START
+=======================================-->
+
+    <!----======================================
+             -SECTION--END
+=======================================-->
+    <!----======================================
+             -SECTION-START
+=======================================-->
+
+    <!----======================================
+             -SECTION--END
+=======================================-->
+    <!----======================================
+             -SECTION-START
+=======================================-->
+
+    <!----======================================
+             -SECTION--END
+=======================================-->*/
