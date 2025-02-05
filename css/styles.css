@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --primary-color: #f8fdff;
   --secondary-color: #f3f7fd;
@@ -11,15 +12,14 @@
   --nunito-font: "Nunito", sans-serif;
   --poppins-font: "Poppins", sans-serif;
 }
-body {
-  font-size: initial;
-}
+
 /*======================================
           Common CSS ‍Start
 =======================================*/
 .container {
-  max-width: 1410px;
-  width: 90%;
+  width: 1410px;
+  /* max-width: 1410px; */
+  /* width: 72%; */
   margin: 0 auto;
 }
 .d-flex {
@@ -41,25 +41,29 @@ ul li {
 }
 a {
   text-decoration: none;
-  font-size: 18px;
   color: var(--text-color);
   font-weight: 600;
   font-family: "Open Sans", serif;
   transition: 0.4s;
+  white-space: nowrap;
 }
-
+a,
+.btn,
+p {
+  font-size: 18px;
+}
 .btn {
   display: inline-block;
   background: var(--button-color);
   color: #fff;
   font-family: var(--nunito-font);
-  font-size: 18px;
   padding: 14px 28px;
   font-weight: 600;
   text-transform: capitalize;
   border-radius: 18px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: background 0.4s, border 0.4s;
+  white-space: nowrap;
 }
 .btn:hover {
   background: transparent;
@@ -68,8 +72,7 @@ a {
 }
 
 p {
-  font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   font-family: "Nunito", serif;
   color: #29313d;
   padding-bottom: 24px;
@@ -92,18 +95,18 @@ nav .navbar-content {
 }
 
 .navbar-content .navbar-brand {
-  width: 22%;
+  width: 314px;
 }
 
 .navbar-content .navbar-menu {
-  width: 58%;
+  width: 722px;
 }
 
 .navbar-content .navbar-menu li:hover a {
   color: var(--button-color);
 }
 .navbar-button {
-  width: 26%;
+  width: 372px;
   text-align: right;
 }
 
@@ -122,6 +125,7 @@ nav .navbar-content {
   opacity: 0;
   visibility: hidden;
   transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 1000;
 }
 .sub-menu li {
   padding: 8px 20px;
@@ -159,38 +163,52 @@ nav .navbar-content {
              HERO-SECTION--END
 =======================================*/
 .feature-section .container {
-  max-width: 1840px;
-  width: 90%;
+  width: 1840px;
+  /* max-width: 1840px; */
+  /* width: 95%; */
+  transform: translateX(80px);
+  padding-top: 101px;
+  padding-bottom: 120px;
 }
 
 .feature-section {
   background-color: var(--primary-color);
 }
 .feature-left {
-  width: 28%;
+  width: 513px;
 }
 .feature-left img {
   width: 100%;
 }
 .feature-text {
-  width: 37%;
+  width: 672px;
 }
 .feature-right {
-  width: 35%;
+  width: 655px;
 }
 
 .feature-right img {
-  width: 77%;
+  width: 508px;
 }
 .feature-text h1 {
-  width: 464px;
-  font-size: 4rem;
+  max-width: 90%;
+  font-size: 64px;
+  /* font-size: clamp(24px, 5vw, 64px); */
   font-weight: 900;
   color: #1d354f;
   font-family: "Open Sans", serif;
 }
+
 .feature-content .feature-content {
   width: 78%;
+}
+.background {
+  position: relative;
+}
+.background svg {
+  position: absolute;
+  top: -1000px;
+  /* z-index: -1; */
 }
 /*======================================
              HERO-SECTION-START
