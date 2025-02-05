@@ -16,6 +16,7 @@
 /*======================================
           Common CSS ‍Start
 =======================================*/
+
 .container {
   width: 1410px;
   /* max-width: 1410px; */
@@ -78,6 +79,14 @@ p {
   padding-bottom: 24px;
   line-height: 200%;
 }
+
+.common-title h2 {
+  font-size: 48px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #29313d;
+  text-align: center;
+}
 /*======================================
           Common CSS End
 =======================================*/
@@ -85,6 +94,9 @@ p {
 /*======================================
           nav-bar CSS ‍Start
 =======================================*/
+.navbar {
+  position: relative;
+}
 nav {
   background-color: var(--primary-color);
   padding: 30px 0;
@@ -92,6 +104,8 @@ nav {
 
 nav .navbar-content {
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .navbar-content .navbar-brand {
@@ -108,6 +122,7 @@ nav .navbar-content {
 .navbar-button {
   width: 372px;
   text-align: right;
+  z-index: 1000;
 }
 
 .navbar-menu li {
@@ -162,6 +177,9 @@ nav .navbar-content {
 /*======================================
              HERO-SECTION--END
 =======================================*/
+.feature-section {
+  position: relative;
+}
 .feature-section .container {
   width: 1840px;
   /* max-width: 1840px; */
@@ -169,6 +187,8 @@ nav .navbar-content {
   transform: translateX(80px);
   padding-top: 101px;
   padding-bottom: 120px;
+  position: relative;
+  z-index: 9;
 }
 
 .feature-section {
@@ -201,15 +221,33 @@ nav .navbar-content {
 
 .feature-content .feature-content {
   width: 78%;
+  padding-left: 49px;
+  transform: translateY(69px);
+}
+.feature-text .feature-text-img {
+  position: absolute;
+  transform: translateY(-50px);
 }
 .background {
   position: relative;
 }
+.background {
+  width: 1920px;
+  margin: 0 auto;
+}
 .background svg {
   position: absolute;
-  top: -1000px;
-  /* z-index: -1; */
+  top: -995px;
+  left: -55px;
+  z-index: 1;
 }
+
+.feature-text-img-bottom img {
+  position: absolute;
+  left: 1000px;
+  bottom: 140px;
+}
+
 /*======================================
              HERO-SECTION-START
 =======================================*/
