@@ -8,6 +8,8 @@
   --secondary-color: #f3f7fd;
   --text-color: #29313d;
   --button-color: #8454f5;
+  --rectengle-color-left: #e5f5d0;
+  --rectengle-color-right: #dee9ec;
   --open-sans-font: "Open Sans", sans-serif;
   --nunito-font: "Nunito", sans-serif;
   --poppins-font: "Poppins", sans-serif;
@@ -175,7 +177,7 @@ nav .navbar-content {
           nav-bar CSS End
 =======================================*/
 /*======================================
-             HERO-SECTION--END
+             HERO-SECTION--Start
 =======================================*/
 .feature-section {
   position: relative;
@@ -194,8 +196,32 @@ nav .navbar-content {
 .feature-section {
   background-color: var(--primary-color);
 }
-.feature-left {
+.feature-section .feature-content .container .feature-left {
+  width: 220px;
+  height: 380px;
+  background-color: #e5f5d0;
+  margin-right: 293px;
+  margin-bottom: 95px;
+}
+
+.feature-section .feature-content .container .feature-left::before {
+  content: "";
   width: 513px;
+  height: 475px;
+  position: absolute;
+  background-image: url(../images/hero-item/bannerLeft.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.feature-section .feature-content .container .feature-left::after {
+  content: "";
+  width: 513px;
+  height: 475px;
+  background-image: url(../images/hero-item/hand-left.png);
+  position: absolute;
+  background-repeat: no-repeat;
 }
 .feature-left img {
   width: 100%;
@@ -203,20 +229,13 @@ nav .navbar-content {
 .feature-text {
   width: 672px;
 }
-.feature-right {
-  width: 655px;
-}
 
-.feature-right img {
-  width: 508px;
-}
 .feature-text h1 {
-  max-width: 90%;
   font-size: 64px;
   /* font-size: clamp(24px, 5vw, 64px); */
   font-weight: 900;
   color: #1d354f;
-  font-family: "Open Sans", serif;
+  font-family: var(--open-sans-font);
 }
 
 .feature-content .feature-content {
@@ -224,10 +243,71 @@ nav .navbar-content {
   padding-left: 49px;
   transform: translateY(69px);
 }
+.feature-content .feature-content .feature-left img:last-child {
+  position: absolute;
+}
+.feature-content .feature-content .feature-left div {
+  content: "";
+  width: 220px;
+  height: 380px;
+  background-color: #e5f5d0;
+  position: absolute;
+  bottom: 0;
+}
 .feature-text .feature-text-img {
   position: absolute;
   transform: translateY(-50px);
 }
+
+.feature-right {
+  width: 585px;
+  height: 183px;
+  background-color: var(--rectengle-color-right);
+  position: relative;
+  margin-right: 70px;
+  margin-top: 404px;
+}
+
+.feature-right .rectangle {
+  width: 508px;
+  height: 587px;
+  background-image: url(../images/hero-item/bannerRight.png);
+  position: absolute;
+  bottom: 0;
+  left: -60px;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.feature-right::before {
+  content: "";
+  position: absolute;
+
+  width: 250px;
+  height: 480px;
+  background-color: var(--rectengle-color-right);
+  position: absolute;
+  top: -320px;
+  right: 80px;
+}
+
+.feature-right::after {
+  content: "";
+  width: 508px;
+  height: 587px;
+  background-image: url(../images/hero-item/right-hand-final.png);
+  position: absolute;
+  bottom: 0;
+  right: 147px;
+  background-repeat: no-repeat;
+}
+/* .feature-right .rectangle {
+  width: 250px;
+  height: 480px;
+  background-color: var(--rectengle-color-right);
+  position: absolute;
+  top: -320px;
+  right: 80px;
+} */
 .background {
   position: relative;
 }
@@ -249,21 +329,41 @@ nav .navbar-content {
 }
 
 /*======================================
-             HERO-SECTION-START
+             HERO-SECTION--END
 =======================================*/
 
+/*======================================
+             SERVICES-SECTION-START
+=======================================*/
+.services .container {
+  margin-top: 100px;
+}
+.services .services-content .services-card {
+  font-family: var(--nunito-font);
+  font-size: 28px;
+}
+.services .services-content {
+  column-gap: 30px;
+}
+.services .services-content .services-card {
+  width: 330px;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.services .services-content .services-card:hover {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.services .services-content .services-card img {
+  width: 100px;
+}
+/* ----======================================
+             SERVICES-SECTION--END
+=======================================--> */
+
 /*
-    <!----======================================
-             HERO-SECTION--END
-=======================================-->
-
-    <!----======================================
-             -SECTION-START
-=======================================-->
-
-    <!----======================================
-             -SECTION--END
-=======================================-->
+    
     <!----======================================
              -SECTION-START
 =======================================-->
