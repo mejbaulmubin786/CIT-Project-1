@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   --primary-color: #f8fdff;
   --secondary-color: #f3f7fd;
@@ -13,6 +8,15 @@
   --open-sans-font: "Open Sans", sans-serif;
   --nunito-font: "Nunito", sans-serif;
   --poppins-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--text-color);
+  overflow-x: hidden; /*শুধুমাত্র ডান-বাম (horizontal) স্ক্রলবার সরাতে */
 }
 
 /*======================================
@@ -76,27 +80,31 @@ p {
 
 p {
   font-weight: 400;
-  font-family: "Nunito", serif;
-  color: #29313d;
+
+  font-family: var(--nunito-font);
   line-height: 200%;
 }
 
 .common-title h2 {
   font-size: 48px;
-  font-family: "Poppins", serif;
+  font-family: var(--poppins-font);
   font-weight: 600;
-  color: #29313d;
   text-align: center;
 }
 
 .common-card {
   font-family: var(--nunito-font);
-  font-size: 28px;
   width: 290px;
   height: 295px;
 }
 .common-card img {
   width: 100px;
+}
+.common-card h3 {
+  white-space: nowrap;
+  font-family: var(--poppins-font);
+  font-size: 28px;
+  font-weight: 600px;
 }
 /*======================================
           Common CSS End
@@ -537,6 +545,7 @@ nav .navbar-content {
   height: 620px;
   transform: translateY(-48px);
   /* animation: up-down 4s infinite; */
+  border-radius: 10px;
 }
 
 .resources .innovate-left-side img {
@@ -574,14 +583,63 @@ nav .navbar-content {
 .innovate .common-title p {
   margin-bottom: 36px;
 }
-/*
-    <!----======================================
-             INNOVATE-SECTION--END
-=======================================-->
-    <!----======================================
-             -SECTION-START
-=======================================-->
 
-    <!----======================================
-             -SECTION--END
-=======================================-->*/
+.innovate-content {
+  column-gap: 49px;
+}
+/*======================================
+             INNOVATE-SECTION--END
+=======================================*/
+/*======================================
+             SHOWCASE-SECTION-START
+=======================================*/
+.showcase {
+  background-color: rgba(248, 253, 254, 0.5);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.showcase .container .common-title h2 {
+  margin-bottom: 24px;
+}
+
+.showcase .container .common-title p {
+  margin-bottom: 60px;
+}
+.showcase .container p {
+  text-align: center;
+}
+.showcase .container .display-item {
+  column-gap: 30px;
+}
+.showcase .container .display-item .item {
+  width: 330px;
+  height: 715px;
+  border-radius: 20px;
+  background-color: #c4c4c4;
+  /* box-shadow: 0px 40px 80px 0px rgba(0, 0, 0, 0.07); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.showcase .container .display-item .item:first-child {
+  background-image: url(../images/showcase/dall-1.png);
+}
+
+.showcase .container .display-item .item:nth-child(2) {
+  background-image: url(../images/showcase/dall-2.png);
+}
+
+.showcase .container .display-item .item:nth-child(3) {
+  background-image: url(../images/showcase/dall-3.png);
+}
+.showcase .container .display-item .item:last-child {
+  background-image: url(../images/showcase/dall-4.png);
+}
+
+.showcase .container:last-child {
+  margin-top: 60px;
+  justify-content: center;
+}
+/*======================================
+  SHOWCASE-SECTION--END
+  =======================================*/
