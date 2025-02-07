@@ -186,7 +186,9 @@
     <section class="feature-section">
       <article class="feature-content">
         <div class="container d-flex">
-          <div class="feature-image feature-left"></div>
+          <div class="feature-image feature-left">
+            <div class="feature-left-content"></div>
+          </div>
           <div class="feature-text">
             <div class="feature-text-img">
               <img src="./images/hero-item/bannerTop.png" alt="" />
@@ -651,7 +653,7 @@
 =======================================-->
 
     <!----======================================
-             HERO-SECTION-START
+             services-SECTION-START
 =======================================-->
     <section class="services">
       <div class="container">
@@ -660,28 +662,28 @@
         </div>
 
         <div class="services-content d-flex">
-          <div class="services-card">
+          <div class="services-card common-card">
             <img src="./images/services/app-dev.ico" alt="" />
             <h3>Easy To Use</h3>
             <p>Jolly good excuse my french boot super my good sir cup</p>
             <div><a href="">Read More</a></div>
           </div>
 
-          <div class="services-card">
+          <div class="services-card common-card">
             <img src="./images/services/logo-1.ico" alt="" />
             <h3>Easy To Use</h3>
             <p>Jolly good excuse my french boot super my good sir cup</p>
             <div><a href="">Read More</a></div>
           </div>
 
-          <div class="services-card">
+          <div class="services-card common-card">
             <img src="./images/services/logo-2.ico" alt="" />
             <h3>Easy To Use</h3>
             <p>Jolly good excuse my french boot super my good sir cup</p>
             <div><a href="">Read More</a></div>
           </div>
 
-          <div class="services-card">
+          <div class="services-card common-card">
             <img src="./images/services/logo-3.ico" alt="" />
             <h3>Easy To Use</h3>
             <p>Jolly good excuse my french boot super my good sir cup</p>
@@ -691,9 +693,73 @@
       </div>
     </section>
     <!----======================================
-             HERO-SECTION--END
+             services-SECTION--END
 =======================================-->
+    <section class="innovate">
+      <div class="container d-flex">
+        <div class="innovate-left-side">
+          <img src="./images/innovate/product-1.jpg" alt="" />
+        </div>
+        <div class="inovate-right-side">
+          <div class="text-top">
+            <div class="common-title">
+              <h2>Innovate lets you launch your app in minutes</h2>
+              <p>
+                Jolly good excuse my french boot super my good sir cup of char
+                richard about chinwag.
+              </p>
+              <div class="innovate-content d-flex">
+                <div class="innovate-card common-card">
+                  <img src="./images/services/app-dev.ico" alt="" />
+                  <h3>Easy To Use</h3>
+                  <p>Jolly good excuse my french boot super my good sir cup</p>
+                  <div><a href="">Read More</a></div>
+                </div>
+                <div class="innovate-card common-card">
+                  <img src="./images/services/app-dev.ico" alt="" />
+                  <h3>Easy To Use</h3>
+                  <p>Jolly good excuse my french boot super my good sir cup</p>
+                  <div><a href="">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="innovate resources">
+      <div class="container d-flex">
+        <div class="inovate-right-side">
+          <div class="text-top">
+            <div class="common-title">
+              <h2>Innovate lets you launch your app in minutes</h2>
+              <p>
+                Jolly good excuse my french boot super my good sir cup of char
+                richard about chinwag.
+              </p>
+              <div class="innovate-content d-flex">
+                <div class="innovate-card common-card">
+                  <img src="./images/services/app-dev.ico" alt="" />
+                  <h3>Easy To Use</h3>
+                  <p>Jolly good excuse my french boot super my good sir cup</p>
+                  <div><a href="">Read More</a></div>
+                </div>
+                <div class="innovate-card common-card">
+                  <img src="./images/services/app-dev.ico" alt="" />
+                  <h3>Easy To Use</h3>
+                  <p>Jolly good excuse my french boot super my good sir cup</p>
+                  <div><a href="">Read More</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="innovate-left-side">
+          <img src="./images/innovate/watch.jpg" alt="" />
+        </div>
+      </div>
+    </section>
     <!----======================================
              -SECTION-START
 =======================================-->
@@ -715,5 +781,59 @@
     <!----======================================
              -SECTION--END
 =======================================-->
+    <script>
+      const svgPaths = document.querySelectorAll(".animated-path");
+      const colors = [
+        "#6a55ea",
+        "#55eaa4",
+        "#eaa455",
+        "#ea55c7",
+        "#c00808",
+        "#872341",
+        "#16404d",
+        "#8e1616",
+        "#441752",
+        "#a888b5",
+        "#efb6c8",
+      ];
+
+      let index = 0;
+
+      function animateStrokeColor() {
+        svgPaths.forEach((path, i) => {
+          path.setAttribute("stroke", colors[(index + i) % colors.length]);
+          path.setAttribute("opacity", "0.5");
+        });
+        index = (index + 1) % colors.length;
+      }
+
+      setInterval(animateStrokeColor, 500);
+
+      /* নিচের অংশ টুকু শুধু একটি পাথে কাজ করবে*/
+      // const svgPath = document.querySelector(".animated-path");
+      // const colors = [
+      //   "#6a55ea",
+      //   "#55eaa4",
+      //   "#eaa455",
+      //   "#ea55c7",
+      //   "#c00808",
+      //   "#872341",
+      //   "#16404d",
+      //   "#8e1616",
+      //   "#441752",
+      //   "#a888b5",
+      //   "#efb6c8",
+      // ];
+
+      // let index = 0;
+
+      // function animateStrokeColor() {
+      //   svgPath.setAttribute("stroke", colors[index]);
+      //   svgPath.setAttribute("opacity", "0.5");
+      //   index = (index + 1) % colors.length;
+      // }
+
+      // setInterval(animateStrokeColor, 500);
+    </script>
   </body>
 </html>
