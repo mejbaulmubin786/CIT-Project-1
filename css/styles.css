@@ -1,10 +1,12 @@
 :root {
   --primary-color: #f8fdff;
-  --secondary-color: #f3f7fd;
+
   --text-color: #29313d;
+  --header-color: #1d354f;
   --button-color: #8454f5;
   --rectengle-color-left: #e5f5d0;
   --rectengle-color-right: #dee9ec;
+  --card-color: #fdfdfd;
   --open-sans-font: "Open Sans", sans-serif;
   --nunito-font: "Nunito", sans-serif;
   --poppins-font: "Poppins", sans-serif;
@@ -13,9 +15,9 @@
 * {
   margin: 0;
   padding: 0;
+  color: var(--text-color);
 }
 body {
-  color: var(--text-color);
   overflow-x: hidden; /*শুধুমাত্র ডান-বাম (horizontal) স্ক্রলবার সরাতে */
 }
 
@@ -31,6 +33,9 @@ body {
 }
 .d-flex {
   display: flex;
+}
+.vertical-center {
+  text-align: center;
 }
 
 .flex-between {
@@ -48,7 +53,7 @@ ul li {
 }
 a {
   text-decoration: none;
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-weight: 600;
   font-family: "Open Sans", serif;
   transition: 0.4s;
@@ -80,7 +85,6 @@ p {
 
 p {
   font-weight: 400;
-
   font-family: var(--nunito-font);
   line-height: 200%;
 }
@@ -89,13 +93,11 @@ p {
   font-size: 48px;
   font-family: var(--poppins-font);
   font-weight: 600;
-  text-align: center;
 }
 
 .common-card {
   font-family: var(--nunito-font);
-  width: 290px;
-  height: 295px;
+  background-color: var(--card-color);
 }
 .common-card img {
   width: 100px;
@@ -261,7 +263,7 @@ nav .navbar-content {
   font-size: 64px;
   /* font-size: clamp(24px, 5vw, 64px); */
   font-weight: 900;
-  color: #1d354f;
+  color: var(--header-color);
   font-family: var(--open-sans-font);
 }
 .feature-text p {
@@ -493,6 +495,9 @@ nav .navbar-content {
 /*======================================
              SERVICES-SECTION-START
 =======================================*/
+.services {
+  background-color: #fff;
+}
 .services .container {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -605,9 +610,7 @@ nav .navbar-content {
 .showcase .container .common-title p {
   margin-bottom: 60px;
 }
-.showcase .container p {
-  text-align: center;
-}
+
 .showcase .container .display-item {
   column-gap: 30px;
 }
@@ -642,4 +645,155 @@ nav .navbar-content {
 }
 /*======================================
   SHOWCASE-SECTION--END
+  =======================================*/
+
+/*======================================
+            companies-SECTION-START
+=======================================*/
+
+.companies .container .common-title {
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logos {
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 140px;
+}
+/*======================================
+            companies-SECTION--END
+  =======================================*/
+/*======================================
+            TRAIL-SECTION--END
+  =======================================*/
+.trail {
+  background: var(--primary-color);
+}
+
+.trail .container {
+  padding-top: 120px;
+  padding-bottom: 320px;
+}
+.trail .container p {
+  margin-bottom: 20px;
+}
+/*------------------------------------------Toggle----------------*/
+.toggle-container {
+  position: relative;
+  width: 96px;
+  height: 28px;
+  margin: auto;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #dcd6f7;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-label::after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background: #6a5acd;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease, background 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-label {
+  background: #e5e0fc;
+}
+
+.toggle-input:checked + .toggle-label::after {
+  left: 50px;
+  background: #5636c6;
+}
+/*------------------------------------------Toggle----------------*/
+.trail-content .pricing-table {
+  justify-content: space-between;
+}
+/*======================================
+            TRAIL-SECTION--END
+  =======================================*/
+
+/*======================================
+            Trail-Content-SECTION--END
+  =======================================*/
+.trail-content .container .pricing-table .pricing-card {
+  border-radius: 30px;
+  padding: 28px 28px 48px 28px;
+}
+
+.trail-content .container .pricing-table {
+  transform: translateY(-260px);
+}
+
+.trail-content .container .pricing-table .pricing-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 19px;
+  margin-left: -28px;
+  margin-right: -28px;
+  border-bottom: 1px solid rgba(27, 17, 87, 0.1);
+  position: relative;
+}
+.trail-content .container .pricing-table .pricing-card h3::before {
+  content: "";
+
+  width: 51px;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #6a55ea;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pricing-table .pricing-card:hover {
+  /* transform: scale(1.05); */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.trail-content .container .pricing-table .pricing-card .header-element {
+  padding-top: 28px;
+  padding-bottom: 48px;
+  justify-content: space-between;
+}
+
+.trail-content .container .pricing-table .pricing-card ul li {
+  margin-bottom: 16px;
+  width: 394px;
+}
+.trail-content .container .pricing-table .pricing-card ul span {
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+}
+.trail-content .container .pricing-table .pricing-card ul li a {
+  font-family: var(--nunito-font);
+}
+/*======================================
+            Trail-Content-SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
   =======================================*/
