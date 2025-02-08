@@ -1,9 +1,9 @@
 :root {
   --primary-color: #f8fdff;
-
   --text-color: #29313d;
   --header-color: #1d354f;
   --button-color: #8454f5;
+  --solial-media: rgba(106, 85, 234, 0.1);
   --rectengle-color-left: #e5f5d0;
   --rectengle-color-right: #dee9ec;
   --card-color: #fdfdfd;
@@ -102,7 +102,8 @@ p {
 .common-card img {
   width: 100px;
 }
-.common-card h3 {
+.common-card h3,
+h3 {
   white-space: nowrap;
   font-family: var(--poppins-font);
   font-size: 28px;
@@ -732,13 +733,18 @@ nav .navbar-content {
 /*======================================
             Trail-Content-SECTION--END
   =======================================*/
+.trail-content {
+}
 .trail-content .container .pricing-table .pricing-card {
   border-radius: 30px;
   padding: 28px 28px 48px 28px;
 }
 
 .trail-content .container .pricing-table {
-  transform: translateY(-260px);
+  position: relative;
+  margin-top: -18%;
+  margin-bottom: 100px;
+  /* transform: translateY(-50%); */
 }
 
 .trail-content .container .pricing-table .pricing-card h3 {
@@ -777,7 +783,7 @@ nav .navbar-content {
   margin-bottom: 16px;
   width: 394px;
 }
-.trail-content .container .pricing-table .pricing-card ul span {
+.trail-content .container .pricing-table .pricing-card ul li span {
   width: 18px;
   height: 18px;
   border: 1px solid black;
@@ -785,11 +791,70 @@ nav .navbar-content {
   display: inline-block;
   text-align: center;
 }
+.trail-content .container .pricing-table .pricing-card ul span {
+  margin-right: 10px;
+}
 .trail-content .container .pricing-table .pricing-card ul li a {
   font-family: var(--nunito-font);
 }
 /*======================================
             Trail-Content-SECTION--END
+  =======================================*/
+/*======================================
+            RECENT-SECTION--END
+  =======================================*/
+.recent .container {
+  justify-content: space-between;
+}
+.recent .container .common-title {
+  width: 912px;
+}
+
+.followes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.recent .container .followes div {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--solial-media);
+  align-items: center;
+  justify-content: center;
+}
+
+.recent .container .followes div:hover {
+  background-color: var(--button-color);
+}
+.recent .container .followes div i {
+  font-size: 28px;
+}
+.recent .container .followes div:hover i {
+  color: white;
+}
+/*======================================
+            RECENT-SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
+  =======================================*/
+/*======================================
+            -SECTION--END
   =======================================*/
 /*======================================
             -SECTION--END
