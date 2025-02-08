@@ -89,7 +89,8 @@ p {
   line-height: 200%;
 }
 
-.common-title h2 {
+.common-title h2,
+h2 {
   font-size: 48px;
   font-family: var(--poppins-font);
   font-weight: 600;
@@ -107,7 +108,7 @@ h3 {
   white-space: nowrap;
   font-family: var(--poppins-font);
   font-size: 28px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 /*======================================
           Common CSS End
@@ -733,8 +734,7 @@ nav .navbar-content {
 /*======================================
             Trail-Content-SECTION--END
   =======================================*/
-.trail-content {
-}
+
 .trail-content .container .pricing-table .pricing-card {
   border-radius: 30px;
   padding: 28px 28px 48px 28px;
@@ -805,16 +805,20 @@ nav .navbar-content {
   =======================================*/
 .recent .container {
   justify-content: space-between;
+  padding-bottom: 68px;
 }
-.recent .container .common-title {
+.recent .container .common-title,
+.recent .container .recent-post {
   width: 912px;
 }
-
-.followes {
+.recent .container .followes,
+.recent .container .recent-post-sidebar {
+  width: 450px;
+}
+.recent .container .followes {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 450px;
 }
 
 .recent .container .followes div {
@@ -834,6 +838,65 @@ nav .navbar-content {
 }
 .recent .container .followes div:hover i {
   color: white;
+}
+
+.recent .container .recent-post img {
+  width: 330px;
+  height: 342px;
+  border-radius: 40px;
+}
+.recent .container .recent-post .post:not(:last-child) {
+  margin-bottom: 30px;
+}
+.recent .container .recent-post .post .post-containt {
+  margin-left: 30px;
+}
+.recent .container .recent-post .post .post-containt .title {
+  margin-bottom: 28px;
+}
+.recent .container .recent-post .post .post-containt .title img:first-child {
+  width: 64px;
+  height: 64px;
+  margin-right: 18px;
+  float: left;
+}
+
+.recent .container .recent-post .post .post-containt h2 {
+  width: 552px;
+  font-size: 36px;
+  font-weight: semibold;
+  margin-bottom: 24px;
+}
+#post {
+  width: 443px;
+}
+.recent .container .recent-post-sidebar {
+  border-top: 1px solid black;
+}
+.recent-post-sidebar img {
+  float: left;
+  margin-right: 20px;
+}
+.recent-post-sidebar h3 {
+  font-weight: 400;
+}
+.top-bar {
+  margin-top: 20px;
+  margin-bottom: 34px;
+}
+.recent-post-sidebar .sidebar-img {
+  width: 100%;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+.recent-post-sidebar .sidebar-img img {
+  width: 210px;
+  height: 210px;
+  border-radius: 20px;
+  background-color: #c4c4c4;
+  margin-right: 0;
+  margin-bottom: 30px;
 }
 /*======================================
             RECENT-SECTION--END
