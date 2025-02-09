@@ -540,7 +540,6 @@ nav .navbar-content {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -969,8 +968,8 @@ footer .container div ul li {
   font-family: var(--nunito-font);
   margin-bottom: 30px;
 }
-footer .footer .container {
-  align-items: center;
+footer .container:last-child {
+  padding-top: 0;
 }
 footer .container:last-child p:first-child {
   width: 1090px;
