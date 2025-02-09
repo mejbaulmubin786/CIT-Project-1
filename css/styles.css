@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #f8fdff;
+  --primary-color: #f4fdff;
+  --secondary-color: #f8fdfe;
   --text-color: #29313d;
   --header-color: #1d354f;
-  --button-color: #8454f5;
+  --button-color: #6a55ea;
   --solial-media: rgba(106, 85, 234, 0.1);
   --rectengle-color-left: #e5f5d0;
   --rectengle-color-right: #dee9ec;
@@ -156,7 +157,7 @@ nav .navbar-content {
   position: absolute;
   top: 300%;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 10px 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -204,8 +205,9 @@ nav .navbar-content {
   position: relative;
 }
 .feature-section .container {
-  width: 1840px;
-  transform: translateX(80px);
+  width: 1920px;
+  padding-left: 80px;
+  /* transform: translateX(80px); */
   padding-top: 101px;
   padding-bottom: 120px;
   position: relative;
@@ -213,7 +215,7 @@ nav .navbar-content {
 }
 
 .feature-section {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 .feature-section .feature-content .container .feature-left {
   width: 220px;
@@ -669,7 +671,7 @@ nav .navbar-content {
             TRAIL-SECTION--END
   =======================================*/
 .trail {
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 .trail .container {
@@ -902,16 +904,82 @@ nav .navbar-content {
             RECENT-SECTION--END
   =======================================*/
 /*======================================
-            -SECTION--END
+            PROJECT-SECTION--END
+  =======================================*/
+.project {
+  background-color: var(--secondary-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.project .container {
+  justify-content: space-between;
+  padding: 140px 156px 140px;
+  border-radius: 80px;
+  background-color: var(--button-color);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.project .container h2 {
+  color: var(--card-color);
+  width: 529px;
+}
+
+.project .container .btn {
+  background-color: var(--secondary-color);
+}
+.project .container .common-button p {
+  color: var(--button-color);
+}
+
+.project .container .btn:hover {
+  background-color: var(--button-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+/*======================================
+            PROJECT-SECTION--END
   =======================================*/
 /*======================================
-            -SECTION--END
+            FOOTER-SECTION--END
   =======================================*/
+footer .container {
+  padding-top: 140px;
+  justify-content: space-between;
+}
+footer .container img {
+  margin-bottom: 44px;
+}
+footer .container p {
+  width: 449px;
+}
+
+footer .container div h4 {
+  font-size: 24px;
+  font-family: var(--open-sans-font);
+  font-weight: 600;
+}
+footer .container div ul {
+  margin-top: 48px;
+  margin-bottom: 80px;
+}
+footer .container div ul li {
+  font-size: 20px;
+  font-family: var(--nunito-font);
+  margin-bottom: 30px;
+}
+footer .footer .container {
+  align-items: center;
+}
+footer .container:last-child p:first-child {
+  width: 1090px;
+}
+footer .container:last-child p:not(:first-child) {
+  text-align: right;
+}
 /*======================================
-            -SECTION--END
-  =======================================*/
-/*======================================
-            -SECTION--END
+            FOOTER-SECTION--END
   =======================================*/
 /*======================================
             -SECTION--END
