@@ -215,7 +215,7 @@ nav .navbar-content {
 }
 
 .feature-section {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 .feature-section .feature-content .container .feature-left {
   width: 220px;
@@ -970,6 +970,7 @@ footer .container div ul li {
 }
 footer .container:last-child {
   padding-top: 0;
+  margin-bottom: 57px;
 }
 footer .container:last-child p:first-child {
   width: 1090px;
