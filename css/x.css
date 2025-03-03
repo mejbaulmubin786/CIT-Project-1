@@ -1,0 +1,82 @@
+/* ... আপনার বর্তমান CSS ... */
+
+/* মোবাইল ডিভাইসের জন্য মিডিয়া কুয়েরি (সর্বোচ্চ 767px) */
+@media (max-width: 767px) {
+  .container {
+    width: 90%; /* ছোট স্ক্রিনে আরও বেশি স্থান ব্যবহার করা */
+  }
+
+  .navbar-content {
+    flex-direction: column; /* ব্র্যান্ড, মেনু এবং বাটন স্ট্যাক করা */
+    align-items: flex-start; /* বাম দিকে সারিবদ্ধ করা */
+  }
+
+  .navbar-brand,
+  .navbar-menu,
+  .navbar-button {
+    flex-basis: auto; /* অটোমেটিক ভিত্তিতে স্থান নেওয়া */
+    width: 100%; /* সম্পূর্ণ প্রস্থ ব্যবহার করা */
+    text-align: left; /* বাম দিকে সারিবদ্ধ করা */
+    margin-bottom: 20px; /* উপাদানগুলোর মধ্যে স্থান তৈরি করা */
+  }
+
+  .navbar-menu ul {
+    flex-direction: column; /* মেনু আইটেমগুলো স্ট্যাক করা */
+    align-items: flex-start; /* বাম দিকে সারিবদ্ধ করা */
+  }
+
+  .navbar-menu li {
+    margin-bottom: 10px; /* মেনু আইটেমগুলোর মধ্যে স্থান তৈরি করা */
+  }
+
+  .sub-menu {
+    position: static; /* সাব-মেনু স্ট্যাটিক করা */
+    display: none; /* ডিফল্টভাবে লুকানো */
+    width: 100%; /* সম্পূর্ণ প্রস্থ ব্যবহার করা */
+    box-shadow: none; /* শ্যাডো সরিয়ে দেওয়া */
+    border-radius: 0; /* বর্ডার রেডিয়াস সরিয়ে দেওয়া */
+    background-color: transparent;
+  }
+
+  .navbar-menu li:hover > .sub-menu {
+    display: block; /* হোভার করলে সাব-মেনু দেখানো */
+    opacity: 1; /* অপাসিটি ১ করা */
+    visibility: visible;
+  }
+
+  .sub-menu .sub-menu {
+    position: static;
+    display: none;
+    width: 100%;
+  }
+
+  .sub-menu li:hover > .sub-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-button {
+    text-align: center;
+  }
+}
+
+/* ট্যাবলেট ডিভাইসের জন্য মিডিয়া কুয়েরি (768px থেকে 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 95%; /* ট্যাবলেট স্ক্রিনে আরও বেশি স্থান ব্যবহার করা */
+  }
+
+  .navbar-menu ul {
+    flex-wrap: wrap; /* মেনু আইটেমগুলো র‌্যাপ করা */
+  }
+
+  .navbar-menu li {
+    margin-right: 10px; /* মেনু আইটেমগুলোর মধ্যে স্থান তৈরি করা */
+  }
+}
+
+/* ডেস্কটপ ডিভাইসের জন্য মিডিয়া কুয়েরি (1024px এবং তার বেশি) */
+@media (min-width: 1024px) {
+  /* এখানে ডেস্কটপ ডিভাইসের জন্য কোনো পরিবর্তনের প্রয়োজন নেই, কারণ আপনার মূল CSS ইতিমধ্যেই ডেস্কটপের জন্য ডিজাইন করা হয়েছে */
+}

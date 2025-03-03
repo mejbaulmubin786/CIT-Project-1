@@ -35,6 +35,10 @@ body {
 .d-flex {
   display: flex;
 }
+
+.flex-grow-1 {
+  flex: 1;
+}
 .vertical-center {
   text-align: center;
 }
@@ -133,18 +137,18 @@ nav .navbar-content {
 }
 
 .navbar-content .navbar-brand {
-  width: 314px;
+  flex-basis: 314px;
 }
 
 .navbar-content .navbar-menu {
-  width: 722px;
+  flex-basis: 722px;
 }
 
 .navbar-content .navbar-menu li:hover a {
   color: var(--button-color);
 }
 .navbar-button {
-  width: 372px;
+  flex-basis: 372px;
   text-align: right;
   z-index: 1000;
 }
